@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Library Management System</h1>
+    </header>
+
+    <main>
+        <!-- Add a Book Section -->
+        <section id="add-book-section">
+            <h2>Add a Book</h2>
+            <form id="add-book-form">
+                <input type="text" id="book-title" placeholder="Enter Book Title" required>
+                <input type="text" id="book-author" placeholder="Enter Author Name" required>
+                <input type="number" id="book-year" placeholder="Enter Year of Publication" required>
+                <button type="submit">Add Book</button>
+            </form>
+        </section>
+
+        <!-- Book List Section -->
+        <section id="book-list-section">
+            <h2>Available Books</h2>
+            <table id="book-list">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Year</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Book list will be dynamically added here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Library Management System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
